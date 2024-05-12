@@ -20,21 +20,28 @@ A template to present a mother figure with their own web page. 😊
 
    open index.html in your browser
 
-4. Customize images and audio
-    [Refer to Customizations](#Customizations)
+4. Customize images and audio  
+[Refer to Customizations](#Customizations)
 
 
-5. Upload project to Netlify
-    - Customize your domain name (use something obscure other than "mother's day" to avoid spoiling the surprise) 🙈
+5. Upload project to Netlify  
+Customize your domain name (use something obscure other than "mother's day" to avoid spoiling the surprise) 🙈
+![image](css/img/3.png)
 
 ## Customizations
 
-The index page contains an animated Mother's Day envelope. 
-The slideshow page contains a slideshow of customizable images of you and your mother figure. 
+The index page contains an animated Mother's Day envelope.   
+The slideshow page contains a slideshow of customizable images of you and your mother figure.   
 The background music is an instrumental of "Mother" by Pink Floyd.
 
-You can replace the slideshow images by including your own in the /img folder.
-You can use your own background music by including your own in the audio file
+You can replace the slideshow images by including your own in the /img folder and editing index.html 
+
+![image](css/img/2.png)
+
+You can use your own background music by including your own mp3 file in the /audio folder.
+
+![image](css/img/1.png)
+
 
 ## Contributing
 
@@ -50,4 +57,3 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
