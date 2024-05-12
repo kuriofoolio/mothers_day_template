@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Slideshow</title>
-  
   <style>
 
     body{
@@ -115,7 +114,7 @@
     <button class="button" onclick="location.href='index.html'">Back home</button>
     </div>
 
-<script>
+<script defer>
   var slideIndex = 0;
   showSlides();
 
@@ -130,9 +129,15 @@
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 4000); // Change image every 4 seconds
   }
+
+  // have some background music
+  function provisionAudio(audioFile) {
+    let audio = new Audio(`audio/${audioFile}.mp3`);
+    audio.play();
+  }
+
+  provisionAudio('Pink\ Floyd\ Mother\ Instrumental')
 </script>
-
-
 
 </body>
 </html>

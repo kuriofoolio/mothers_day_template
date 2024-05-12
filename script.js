@@ -3,7 +3,6 @@ function nextPage() {
   }
   $(document).ready(function () {
   
-
     $(".container")
       .mouseenter(function () {
         $(".card").stop().animate(
@@ -22,4 +21,3 @@ function nextPage() {
         );
       });
   });
-
