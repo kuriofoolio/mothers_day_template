@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  
+  <style>
+
+    body{
+        background-color: #fae1dd;
+    }
+
+    .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  button {
+    background-color: #f08080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 100px 2px;
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+  }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 800px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Ensure that overflow is hidden to prevent images from overflowing */
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+
+    /* Images within the slideshow */
+.mySlides img {
+  width: 100%; /* Make the images fill the entire width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure that the images are displayed as block elements */
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="css/img/33afd16d-8259-4454-a013-9e6779f1331e.JPG" alt="Image 1">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/3e672bd9-523a-4b44-9a66-3f43551cf5ce.JPG" alt="Image 2">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/42706d0e-7bf0-4fab-bcce-04399c882427.JPG" alt="Image 3">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/e271d97f-38be-4b38-a568-ea623a04585a.JPG" alt="Image 3">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/IMG-5428.jpg" alt="Image 3">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/IMG-5434.jpg" alt="Image 3">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/IMG-6208.JPG" alt="Image 3">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="css/img/IMG-7574.JPG" alt="Image 3">
+  </div>
+</div>
+
+<div class = "buttons-container">
+   
+    
+    <button class="button" onclick="location.href='index.html'">Back home</button>
+    </div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }
+</script>
+
+
+
+</body>
+</html>
