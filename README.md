@@ -1,6 +1,7 @@
 # Mother's Day Template 🌸
 
-A template to present a mother figure with their own web page. 😊
+A template to present a mother figure with their own web page. 😊  
+[See live example](https://thermosyad.netlify.app/)
 
 ## Installation
 
